@@ -6,7 +6,82 @@ html {
 body {
     box-sizing: border-box;
     background-color: #FAFAFA;
+    padding:0;
+    margin: 0;
 }
+
+.container {
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 8rem;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.logo {
+    margin-left: 4rem;
+}
+
+.user-nav__explore {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.user-nav__favorite {
+    
+}
+
+.user-nav__profile {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+/* search */
+
+.search {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f4f2f2;
+    margin-right: -3.5rem;
+    padding: 1rem 1rem;
+}
+
+.search__input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.search__button {
+    border: none;
+    background-color: #f4f2f2;
+}
+
+.search__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill:#ccc;
+    width: 1.5rem;
+}
+
+
 
 .main-feed {
     /* width 이렇게 주는 이유? */
@@ -17,12 +92,12 @@ body {
     border: 1px solid #e6e6e6;
     border-radius: 3px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 35%;
     transform: translate(-50%, -50%);
 }
 
-.header img {
+.feed-header img {
     width : 5rem;
 }
 
