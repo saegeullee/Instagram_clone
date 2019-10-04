@@ -59,6 +59,10 @@ body {
     text-align: center;
 }
 
+.login-form-btn-active {
+    background-color: #3897F0;
+}
+
 .bottom-line {
     display: block;
     margin: 2rem 4rem 1.8rem;
