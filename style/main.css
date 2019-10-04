@@ -149,9 +149,20 @@ body {
     align-items: center;
 }
 
-.profile--shape {
+.profile__shape--small {
     height: 3.5rem;
     width: 3.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.profile__shape--big {
+    height: 4.5rem;
+    width: 4.5rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
