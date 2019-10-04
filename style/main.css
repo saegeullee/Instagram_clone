@@ -1,4 +1,3 @@
-
 html {
     font-size: 62.5%;
 }
@@ -14,18 +13,30 @@ body {
     max-width: 114rem;
     width: 100%;
     margin: 0 auto;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
 }
+
 
 /* HEADER */
 
-.header {
-    height: 8rem;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
+    max-width: 114rem;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 8rem;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
 }
 
 .logo {
@@ -108,19 +119,22 @@ body {
 
 /* ~ HEADER */
 
-/* main feed */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
 .main-feed {
     /* width 이렇게 주는 이유? */
-    max-width: 61.4rem;
-    width: 100%;
+    width: 61.4rem;
     height: 59rem;
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 3px;
-    position: absolute;
-    top: 60%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
 }
 
 .feed-header {
@@ -156,8 +170,9 @@ body {
 }
 
 .feed-bottom {
-
-}
+    display: flex;
+    flex-direction: column;
+}   
 
 .feed-bottom__engage {
     display: flex;
@@ -221,6 +236,7 @@ body {
 
 .feed-bottom__comment-input {
     flex: 0 0 85%;
+    height: 5rem;
     border: none;
 }
 
@@ -235,4 +251,153 @@ body {
     margin-right: 2rem;
     font-weight: bold;
     color: #CBE4FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SIDE STORY */
+
+.side {
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.side__user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side__user-profile--img {
+    height: 4rem;
+    width: auto;
+}
+
+.side__user-profile--name {
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.story-list {
+    margin-top: 1.5rem;
+    width: 30rem;
+    height: 22rem;
+    background-color: #fff;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
+    overflow-y:scroll;    
+}
+
+.story-list__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.story-list__header--title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-left: .3rem;
+}
+
+.story-list__header--notice {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.story-list__item {
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.story-list__item--img {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.story-list__item--info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+}
+
+.story-list__item--name {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.story-list__item--time {
+    margin-top: .2rem;
+    color: rgb(160, 160, 160);
+}
+
+
+/* SIDE RECOMMENDATION */
+
+.recommendation {
+    margin-top: 1.5rem;
+    width: 30rem;
+    height: 19.5rem;
+    background-color: #fff;
+    border: 1px solid #f0eeee;
+    border-radius: 3px;
+}
+
+.recommendation__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.recommendation__header--title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-left: .3rem;
+}
+
+.recommendation__header--notice {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.recommendation__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.recommendation__item--img {
+    height: 3.5rem;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.recommendation__item--info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.3rem;
+}
+
+.recommendation__item--name {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.recommendation__item--follower {
+    margin-top: .2rem;
+    color: rgb(160, 160, 160);
+}
+
+.recommendation__item--follow-btn {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #3897F0;
+    font-weight: 1000;
 }
