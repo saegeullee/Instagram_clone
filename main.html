@@ -10,17 +10,77 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-container">
             <img src="img/logo.PNG" alt="" class="logo">
-            <form action="" class="search">
-                <input type="text" class="search__input" placeholder="검색">
-                <button class="search__button" disabled>
-                    <svg class="search__icon">
-                        <use xlink:href="img/sprite.svg#icon-search"></use>
-                    </svg>
-                </button>
-            </form>
+
+            <div class="search-group">
+                <form action="" class="search" autocomplete="off">
+                    <input type="text" class="search__input" id="search__input" placeholder="검색">
+                    <button class="search__button" disabled>
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="search-result" id="search-result">
+                    <!-- <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">saegeullee</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">rafaelnadal</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">willian</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">louies</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">louies</span>
+                        </div>
+                    </div>
+
+                    <div class="search-result__item">
+                        <div class="profile__shape--small">
+                            <img src="img/woman.jpg" alt="" class="search-result__item--img">
+                        </div>
+                        <div class="search-result__item--info">
+                            <span class="search-result__item--name">somi</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
 
             <nav class="user-nav">
                 <div class="user-nav__explore">
