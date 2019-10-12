@@ -280,15 +280,27 @@ body {
     font-size: 1.4rem;
 }
 
+.feed-bottom__description {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.feed-bottom__description--name {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feed-bottom__description--content {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
 .feed-bottom__comments {
     display: flex;
     padding-top: 1rem;
     padding-left: 1rem;
     font-size: 1.4rem;
-}
-
-.feed-bottom__comments--id {
-    
 }
 
 .feed-bottom__comments--content {
