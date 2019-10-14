@@ -126,7 +126,7 @@ const renderFeed = post => `
         ${post.comments.map(el => renderComments(el.comment)).join("")}
     </div>
 
-    <div class="feed-bottom__time-notice">${post.date}</div>
+    <div class="feed-bottom__time-notice">7시간전</div>
     <form action="" class="feed-bottom__form">
         <input type="text" placeholder="댓글 달기.." class="feed-bottom__comment-input" id="feed-bottom__comment-input">
         <a href="" class="feed-bottom__comment-btn" id="feed-bottom__comment-btn">게시</a>
@@ -192,17 +192,13 @@ const getFeedItem = () => {
             return result.json();
         })
         .then(data => {
-            post = data.post_list[0];
-            comments = data.comment_list;
-            post_obj = {
-                id: post.id,
-                img: post.image,
-                description: post.description,
-                comments: comments
-            };
-            console.log(post_obj);
+            post = data;
+            console.log(post);
 
-            feedTarget.insertAdjacentHTML("beforeend", renderFeed(post_obj));
+            feedTarget.insertAdjacentHTML(
+                "beforeend",
+                renderFeed(post.post_list)
+            );
 
             attachElementsToHandleComments();
         });
